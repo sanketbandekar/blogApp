@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import { Text, StyleSheet, View, FlatList, Button, TouchableOpacity} from 'react-native' 
 import { Context } from '../context/BlogContext'
-import { Feather } from '@expo/vector-icons'
+import { Feather, AntDesign } from '@expo/vector-icons'
 
 const IndexScreen = ({navigation}) =>{
-    const {state, addBlogPost, deleteBlogPost} = useContext(Context)
+    const {state, deleteBlogPost} = useContext(Context)
     return(
         <View>
             <FlatList
@@ -36,6 +36,7 @@ IndexScreen.navigationOptions = ({navigation}) => {
         )
     }
 }
+
 
 const styles = StyleSheet.create({
     row: {
